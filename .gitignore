@@ -9,6 +9,11 @@
 # TOPEXPERT Version provider file
 VersionProvider.cs
 
+# Publish
+*.pubxml
+*.arm.json
+serviceDependencies*.json
+
 # User-specific files
 *.suo
 *.user

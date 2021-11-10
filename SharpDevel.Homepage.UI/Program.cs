@@ -1,7 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
+#if RELEASE
+builder.Configuration.AddAzureKeyVault(Environment.GetEnvironmentVariable("VaultUri"));
+#endif
+
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -21,5 +26,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapControllers();
 
 app.Run();

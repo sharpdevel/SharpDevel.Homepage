@@ -1,7 +1,6 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
 }
 
 @section Scripts
@@ -83,7 +82,7 @@
 				};
 
 				$.ajax({
-					url: "./api/default/SendMessage",
+					url: "./api/Email",
 					type: "Post",
 					data: JSON.stringify(json),
 					contentType: 'application/json; charset=utf-8',
@@ -371,7 +370,7 @@
 						<div class="title">SafetyConcept-eGas</div>
 						<div class="period">System Architect between 2016 and 2021</div>
 					</div>
-					<div class="description text-block" =">
+					<div class="description text-block">
 						SPA web management system to support application engineers to calculate data for electric speed
 						pedals and their security boundaries by using C# scripting and git in the browser.
 					</div>
@@ -401,7 +400,7 @@
 				<div class="project">
 					<div class="header">
 						<div class="logo">
-							<img src="Images/darkbird.png"
+							<img src="Images/darkbird.png"/>
 						</div>
 						<div class="title">Azure Cloud-ERP-System</div>
 						<div class="period">CEO since 2014</div>
