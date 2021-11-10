@@ -1,0 +1,523 @@
+﻿:root {
+	--global-darkgray: rgba(0, 0, 0, 0.80);
+	--global-lightgray: lightgray;
+	--global-gray: gray;
+	--smaller-font-size: 0.8em;
+	--global-border-radius: 50px;
+	--global-block-width: 700px;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 12px;
+	overflow-y: scroll;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+
+.button {
+	color: var(--global-lightgray);
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #d3d3d3;
+	border-top-right-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #5d5d5d;
+	border-radius: 10px;
+}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: black;
+	}
+
+video#backgroundvideo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url(../images/background.jpg) no-repeat;
+	background-size: cover;
+	object-fit: cover;
+}
+
+#center_content {
+	text-align: center;
+}
+
+#first_impression {
+	padding-top: 5%;
+}
+
+#portrait {
+	height: 250px;
+}
+
+#myname {
+	font-size: 40px;
+	border-bottom: solid 1px black;
+	display: inline-block;
+	box-shadow: inset;
+}
+
+#profession {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0;
+}
+
+#mission {
+	font-size: 1.4em;
+	max-width: var(--global-block-width);
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	background-color: rgba(255,255,255,0.7);
+	padding: 20px;
+	border-radius: var(--global-border-radius);
+	word-spacing: 0.3em;
+	line-height: 1.7em;
+}
+
+#customers {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	max-width: 900px;
+}
+
+	#customers img {
+		display: inline-block;
+		height: 50px;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 30px;
+		vertical-align: middle;
+	}
+
+		#customers img:last-child {
+			margin-right: 0;
+		}
+
+		#customers img.square {
+			height: 60px;
+		}
+
+		#customers img.rectangle {
+			height: 30px;
+		}
+
+#join_button {
+	color: var(--global-darkgray);
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: var(--global-border-radius);
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 1.2em;
+}
+
+	#join_button:hover {
+		background-color: var(--global-darkgray);
+		color: white;
+	}
+
+.glow {
+	animation: glowing 5000ms infinite;
+}
+
+@keyframes glowing {
+	0% {
+		box-shadow: 0 0 -10px #ffffff;
+	}
+
+	40% {
+		box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 20px #000000;
+	}
+
+	60% {
+		box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 20px #000000;
+	}
+
+	100% {
+		box-shadow: 0 0 -10px #ffffff;
+	}
+}
+
+header {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.990);
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #d3d3d3;
+	color: #d3d3d3;
+	font-family: Arial;
+	z-index: 999;
+	height: 40px;
+}
+
+	header.sticky {
+		position: fixed;
+		top: 0;
+		bottom: auto;
+	}
+
+	header #commands {
+		position: absolute;
+		left: 20px;
+		bottom: 10px;
+	}
+
+	header img {
+		height: 24px;
+	}
+
+	header #more {
+		cursor: pointer;
+	}
+
+	header #social {
+		position: absolute;
+		right: 20px;
+		bottom: 10px;
+	}
+
+	header #copyright {
+		position: absolute;
+		right: 130px;
+		bottom: 10px;
+		text-align: right;
+	}
+
+	header a {
+		color: #d3d3d3;
+	}
+
+#content {
+	top: 2000px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: black;
+}
+
+.section_teaser {
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+.section_info {
+	padding: 150px 50px 150px 50px;
+}
+
+	.section_info h2 {
+		font-size: 3em;
+		margin: 0;
+		padding: 0;
+		font-weight: normal;
+		max-width: var(--global-block-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.section_info h3 {
+		font-size: 18px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.section_info .highlight {
+		font-weight: bold;
+	}
+
+	.section_info .section-logo {
+		width: 150px;
+		margin-bottom: 30px;
+	}
+
+	.section_info .button {
+		background-color: var(--global-darkgray);
+		font-weight: 300;
+		width: 200px;
+		margin: 20px auto 20px auto;
+		color: white;
+		border-radius: var(--global-border-radius);
+		padding: 10px 20px 10px 20px;
+		font-size: 1.2em;
+	}
+
+		.section_info .button:hover {
+			background-color: var(--global-lightgray);
+			color: black;
+		}
+
+/* Crafting */
+#crafting .project {
+	margin-top: 60px;
+	max-width: var(--global-block-width);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+	#crafting .project .header {
+		margin-bottom: 10px;
+	}
+
+	#crafting .project .logo img {
+		height: 50px;
+		margin-right: 20px;
+		margin-bottom:15px;
+	}
+
+		#crafting .project .logo img.small-logo {
+			height: 30px;
+			margin-right: 20px;
+		}
+
+	#crafting .project .title {
+		font-size: 3em;
+	}
+
+	#crafting .project .period {
+		font-size: 1.5em;
+		color: var(--global-darkgray);
+		position: relative;
+		top: -6px;
+	}
+
+	#crafting .project .description {
+		font-size: 1.7em;
+	}
+
+	#crafting .project .technologies {
+		color: var(--global-darkgray);
+		font-size: 1.2em;
+	}
+
+#crafting #many-more {
+	margin-top: 25px;
+}
+
+/* Skills */
+#skills .cloud {
+	font-size: var(--smaller-font-size);
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--global-block-width);
+}
+
+#skill_table {
+	border-spacing: 3px;
+	border-collapse: separate;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	#skill_table td {
+		padding: 5px;
+		font-size: 1.8em;
+	}
+
+#skills div.years {
+	background: var(--global-darkgray);
+	color: white;
+	text-align: left;
+	padding: 10px;
+	border-top-left-radius: var(--global-border-radius);
+	border-bottom-left-radius: var(--global-border-radius);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#skill_table div.years20 {
+	width: 250px;
+}
+
+#skill_table div.years15 {
+	width: 200px;
+}
+
+#skill_table div.years12 {
+	width: 170px;
+}
+
+#skill_table div.years10 {
+	width: 150px;
+}
+
+#skill_table div.years05 {
+	width: 100px;
+}
+
+#skill_table td:first-child {
+	text-align: right;
+}
+
+#imprint {
+	position: fixed;
+	background-color: white;
+	text-align: justify;
+	padding: 50px;
+	display: none;
+	border: solid 1px gray;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 100px;
+	color: black;
+	overflow-y: scroll;
+	z-index: 999;
+	border-radius: 5px;
+}
+
+	#imprint .caption {
+		font-weight: bold;
+		margin-top: 10px;
+	}
+
+	#imprint .floating {
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+#contact {
+	position: fixed;
+	background-color: white;
+	text-align: justify;
+	padding: 50px;
+	border: solid 1px gray;
+	display: none;
+	top: 20px;
+	left: 20px;
+	color: black;
+	z-index: 999;
+	border-radius: 5px;
+}
+
+	#contact label {
+		margin-top: 10px;
+	}
+
+	#contact label, #contact input, #contact textarea {
+		display: block;
+		border-radius: 5px;
+	}
+
+	#contact input, #contact textarea {
+		width: 300px;
+		padding: 10px;
+		border: solid 1px #d3d3d3;
+		font-size: larger;
+	}
+
+	#contact #gdpr {
+		background-color: #e7ffe7;
+		width: 300px;
+		margin: 20px 0 20px 0;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	#contact #gdpr_link {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+#mail_success {
+	color: #73aa1f;
+	margin-left: 10px;
+}
+
+#send_message img {
+	vertical-align: middle;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+@media (max-width: 600px) {
+	#skill_table td {
+		font-size: 1.0em;
+	}
+
+	#skill_table div.years20 {
+		width: 200px;
+	}
+
+	#skill_table div.years15 {
+		width: 150px;
+	}
+
+	#skill_table div.years12 {
+		width: 120px;
+	}
+
+	#skill_table div.years10 {
+		width: 100px;
+	}
+
+	#skill_table div.years05 {
+		width: 50px;
+	}
+
+	#copyright {
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 500px) {
+	#portrait {
+		height: 150px;
+	}
+
+	#mission {
+		font-size: 1em;
+	}
+
+	#myname {
+		font-size:30px;
+	}
+
+	#profession {
+		font-size:22px;
+	}
+
+	#customers img.square {
+		height:30px;
+	}
+
+	#customers img.rectangle {
+		height: 15px;
+	}
+}

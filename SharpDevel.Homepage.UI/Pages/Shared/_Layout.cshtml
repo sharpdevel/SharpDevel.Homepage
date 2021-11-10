@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1052763-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-1052763-1');
+	</script>
+	<title>tobias mundt - software crafting</title>
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="language" content="deutsch, de" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="software, architektur, refactoring, consulting, c#, .net, ajax, asp, asp.net, projekte, microsoft" />
+	<meta name="description" content="Digitizing companies - so you can focus on your business." />
+	<meta name="author" content="Tobias Mundt" />
+	<meta name="author" content="Tobias Mundt" />
+	<meta name="page-topic" content="software-development" />
+	<meta name="robots" content="index,follow" />
+	<meta name="revisit-after" content="2 month" />
+	<meta name="audience" content="alle" />
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="~/css/screen.css" asp-append-version="true" />
+</head>
+<body>
+
+	@RenderBody()
+
+
+	<script src="https://kit.fontawesome.com/96edf1bf16.js" crossorigin="anonymous"></script>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/js/parallax.min.js" asp-append-version="true"></script>
+
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
