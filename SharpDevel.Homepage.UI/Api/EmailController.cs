@@ -20,16 +20,14 @@ namespace SharpDevel.Homepage.UI.Api
 	{
 		//Fields
 		#region smtpSettings
-		private SmtpSettings smtpSettings;
+		private IConfiguration configuration;
 		#endregion
 
 		//Constructors
 		#region EmailController
 		public EmailController(IConfiguration configuration)
 		{
-			this.smtpSettings = configuration
-				.GetSection("Smtp")
-				.Get<SmtpSettings>();
+			this.configuration = configuration;
 		}
 		#endregion
 
@@ -50,8 +48,11 @@ namespace SharpDevel.Homepage.UI.Api
 			message.Body = $"<p>Company: {viewModel.SenderName}</p><p>Email: {viewModel.SenderEmail}</p><p>Message: {viewModel.SenderMessage}</p>";
 			message.IsBodyHtml = true;
 
-			var client = new SmtpClient(this.smtpSettings.Url, this.smtpSettings.Port);
-			client.Credentials = new NetworkCredential(this.smtpSettings.User, this.smtpSettings.Pass);
+			var smtpSettings = this.configuration
+				.GetSection("Smtp")
+				.Get<SmtpSettings>();
+			var client = new SmtpClient(smtpSettings.Url, smtpSettings.Port);
+			client.Credentials = new NetworkCredential(smtpSettings.User, smtpSettings.Pass);
 			client.EnableSsl = true;
 			client.Send(message);
 		}

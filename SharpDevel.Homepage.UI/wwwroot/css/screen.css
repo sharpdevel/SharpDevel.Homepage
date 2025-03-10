@@ -98,35 +98,18 @@ video#backgroundvideo {
 	line-height: 1.7em;
 }
 
-#customers {
+#brand {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 30px;
-	max-width: 900px;
+	margin-bottom: 20px;
 }
 
-	#customers img {
-		display: inline-block;
-		height: 50px;
-		margin-left: 15px;
-		margin-right: 15px;
-		margin-bottom: 30px;
-		vertical-align: middle;
+	#brand img {
+		max-width: 300px;
 	}
 
-		#customers img:last-child {
-			margin-right: 0;
-		}
-
-		#customers img.square {
-			height: 60px;
-		}
-
-		#customers img.rectangle {
-			height: 30px;
-		}
-
-#join_button {
+#tellmemore_button {
 	color: var(--global-darkgray);
 	padding: 10px 20px 10px 20px;
 	background-color: rgba(255,255,255,0.7);
@@ -136,7 +119,7 @@ video#backgroundvideo {
 	font-size: 1.2em;
 }
 
-	#join_button:hover {
+	#tellmemore_button:hover {
 		background-color: var(--global-darkgray);
 		color: white;
 	}
@@ -275,53 +258,6 @@ header {
 			color: black;
 		}
 
-/* Crafting */
-#crafting .project {
-	margin-top: 60px;
-	max-width: var(--global-block-width);
-	margin-right: auto;
-	margin-left: auto;
-}
-
-	#crafting .project .header {
-		margin-bottom: 10px;
-	}
-
-	#crafting .project .logo img {
-		height: 50px;
-		margin-right: 20px;
-		margin-bottom:15px;
-	}
-
-		#crafting .project .logo img.small-logo {
-			height: 30px;
-			margin-right: 20px;
-		}
-
-	#crafting .project .title {
-		font-size: 3em;
-	}
-
-	#crafting .project .period {
-		font-size: 1.5em;
-		color: var(--global-darkgray);
-		position: relative;
-		top: -6px;
-	}
-
-	#crafting .project .description {
-		font-size: 1.7em;
-	}
-
-	#crafting .project .technologies {
-		color: var(--global-darkgray);
-		font-size: 1.2em;
-	}
-
-#crafting #many-more {
-	margin-top: 25px;
-}
-
 /* Skills */
 #skills .cloud {
 	font-size: var(--smaller-font-size);
@@ -355,6 +291,10 @@ header {
 	border-bottom-left-radius: var(--global-border-radius);
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+
+#skill_table div.years25 {
+	width: 300px;
 }
 
 #skill_table div.years20 {
@@ -511,13 +451,5 @@ header {
 
 	#profession {
 		font-size:22px;
-	}
-
-	#customers img.square {
-		height:30px;
-	}
-
-	#customers img.rectangle {
-		height: 15px;
 	}
 }

@@ -49,7 +49,7 @@
 				$('#contact').slideUp();
 			});
 
-			$('#contact_toggle, #join_button, .contact_button').click(function () {
+			$('#contact_toggle, .contact_button').click(function () {
 				$('#imprint').slideUp();
 				$('#contact').slideToggle();
 				$('#mail_success').hide();
@@ -110,26 +110,29 @@
 			<img id="portrait" src="Images/TobiasMundt.png" title="Tobias Mundt" alt="Tobias Mundt" />
 		</div>
 		<div id="myname">tobias mundt</div>
-		<h1 id="profession">software architect</h1>
+		<h1 id="profession">problem solver</h1>
 		<div id="mission">
-			I am Microsoft .NET Full-Stack Architect and developer with 20 years experience in huge, long running projects.
-			I focus on cloud software and the Microsoft Azure platform to bring long lasting and maintainable software to
-			users at:
+			<p>
+				Hi, I’m Tobias Mundt – the creator of Darkbird.
+			</p>
+			<p>
+				Running a security company comes with challenges – I know that firsthand. That’s why I developed Darkbird, THE planning software that helps guarding companies
+				manage their teams digitally, from anywhere. Whether it’s scheduling, real-time monitoring, or optimizing workflows, Darkbird gives you full control over your operations.
+			</p>
+			<p>
+				Let’s bring your security business into the digital age – with a solution built for professionals like you.
+			</p>
 		</div>
 		<div>
-			<a href="#crafting">
-				<div id="customers">
-					<img class="square" src="Images/Customers/zeiss.png" alt="Carl Zeiss Meditec AG" title="Carl Zeiss Meditec AG" />
-					<img class="square" src="images/customers/volkswagen.png" alt="Audi AG" title="Volkswagen AG" />
-					<img class="rectangle" src="images/customers/audi.png" alt="Audi AG" title="Audi AG" />
-					<img class="rectangle" src="Images/Customers/denso.png" alt="DENSO Automotive Deutschland GmbH" title="DENSO Automotive Deutschland GmbH" />
-					<img class="square" src="images/customers/thyssenkrupp.png" alt="Thyssen Krupp AG" title="Thyssen Krupp AG" />
+			<a href="#darkbird">
+				<div id="brand">
+					<img src="images/darkbird_xl.png" alt="Darkbird" title="Darkbird" />
 				</div>
 			</a>
 		</div>
 		<div>
-			<a id="join_button" class="glow">
-				<span>Like to join? Contact me!</span>
+			<a id="tellmemore_button" class="glow" href="https://www.darkbird.io">
+				<span>Tell me more!</span>
 			</a>
 		</div>
 	</div>
@@ -183,6 +186,50 @@
 	</header>
 	<!-- Content -->
 	<div id="content">
+		<!-- Darkbird -->
+		<div id="darkbird">
+			<div class="section_teaser parallax-window" data-parallax="scroll" data-image-src="images/parallax/sicherheitsdienst.jpg"></div>
+			<div class="section_info">
+				<div>
+					<a href="https://www.darkbird.de" target="_blank">
+						<img src="Images/darkbird.png" alt="dark.bird" title="dark.bird" class="section-logo" />
+					</a>
+				</div>
+				<h2>
+					ERP-System for guarding companies. Mission Planning & Guard Control System.
+				</h2>
+				<a href="https://www.darkbird.de/">
+					<div class="button">
+						Learn more!
+					</div>
+				</a>
+				<div>
+					Your business digital.
+				</div>
+			</div>
+		</div>
+		<!-- OpenSource -->
+		<div id="opensource">
+			<div class="section_teaser parallax-window" data-parallax="scroll" data-image-src="images/parallax/softwaredevelopment.jpg"></div>
+			<div class="section_info">
+				<div>
+					<a href="https://github.com/everyday-solution" target="_blank">
+						<img src="Images/opensource.png" alt="my open source projects on github" title="my open source projects on github" class="section-logo" />
+					</a>
+				</div>
+				<h2>
+					Open source software I created and released through the years.
+				</h2>
+				<a href="https://github.com/everyday-solution" target="_blank">
+					<div class="button">
+						See samples of my work
+					</div>
+				</a>
+				<div>
+					Sharing with the world.
+				</div>
+			</div>
+		</div>
 		<!-- Skills -->
 		<div id="skills">
 			<div class="section_teaser parallax-window" data-parallax="scroll" data-image-src="images/parallax/azure_cloud.jpg"></div>
@@ -192,8 +239,8 @@
 					<tr>
 						<td>.NET & C# / VB.NET</td>
 						<td>
-							<div class="years years20">
-								+20 years
+							<div class="years years25">
+								+25 years
 							</div>
 						</td>
 					</tr>
@@ -216,13 +263,21 @@
 					<tr>
 						<td>Entity Framework, O/R-Mapper</td>
 						<td>
-							<div class="years years12">
-								+12 years
+							<div class="years years15">
+								+15 years
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<td>Azure</td>
+						<td>
+							<div class="years years15">
+								+15 years
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>.NET Core</td>
 						<td>
 							<div class="years years10">
 								+10 years
@@ -230,18 +285,10 @@
 						</td>
 					</tr>
 					<tr>
-						<td>.NET Core</td>
-						<td>
-							<div class="years years05">
-								+5 years
-							</div>
-						</td>
-					</tr>
-					<tr>
 						<td>Angular 2+</td>
 						<td>
-							<div class="years years05">
-								+5 years
+							<div class="years years10">
+								+10 years
 							</div>
 						</td>
 					</tr>
@@ -314,154 +361,12 @@
 					Windows Phone 8
 					WPF
 					Xamarin.Forms
+					MAUI
 					XML
 				</div>
 				<a class="contact_button">
 					<div class="button">
 						Contact me now!
-					</div>
-				</a>
-			</div>
-		</div>
-		<!-- Crafting -->
-		<div id="crafting">
-			<div class="section_teaser parallax-window" data-parallax="scroll" data-image-src="images/parallax/projects.jpg"></div>
-			<div class="section_info">
-				<h2>
-					latest projects:
-				</h2>
-				<div class="project">
-					<div class="header">
-						<div class="logo">
-							<img src="Images/Customers/Zeiss.png" alt="Carl Zeiss Meditec AG" />
-						</div>
-						<div class="title">Digital Health Data</div>
-						<div class="period">Software Developer since 2021</div>
-					</div>
-					<div class="description text-block">
-						Azure cloud platform for next generation health data management and system integration.
-					</div>
-					<div class="technologies text-block">
-						Azure, EventGrid, CosmosDB, Typescript, Node.JS, JEST, JAVA, DICOMweb, FHIR
-					</div>
-				</div>
-				<div class="project">
-					<div class="header">
-						<div class="logo">
-							<img src="Images/Customers/Denso.png" alt="Denso Automotive GmbH" class="small-logo" />
-						</div>
-						<div class="title">Test Bench Management</div>
-						<div class="period">System Architect / Team Lead since 2018</div>
-					</div>
-					<div class="description text-block">
-						Web-based ERP/LIS system to manage automotive testing environments. Integrating data and events from
-						test bed environments and connect all roles of users participating in automotive testing, to provide all
-						data to the appropriate place.
-					</div>
-					<div class="technologies text-block">
-						ASP.NET Core 3.1, ASP.NET Blazor, EF.Core, ASP.Core API, SQL-Server, STMP, LDAP, jQuery, EPPlus
-					</div>
-				</div>
-				<div class="project">
-					<div class="header">
-						<div class="logo">
-							<img src="Images/Customers/Volkswagen.png" alt="Volkswagen Group AG" />
-						</div>
-						<div class="title">SafetyConcept-eGas</div>
-						<div class="period">System Architect between 2016 and 2021</div>
-					</div>
-					<div class="description text-block">
-						SPA web management system to support application engineers to calculate data for electric speed
-						pedals and their security boundaries by using C# scripting and git in the browser.
-					</div>
-					<div class="technologies text-block">
-						Angular2+, Azure Web-API, MsSQL-Server, MySQL, Roslyn, SignalR, Entity Framework, Scripting, A2L, MDX, HEX
-					</div>
-				</div>
-				<div class="project">
-					<div class="header">
-						<div class="logo">
-							<img src="Images/Customers/Fev.png" alt="FEV GmbH" class="small-logo" />
-							<img src="Images/Customers/Denso.png" alt="Denso Automotive GmbH" class="small-logo" />
-						</div>
-						<div class="title">Car2X and fleet data</div>
-						<div class="period">System Architect between 2013 and 2015</div>
-					</div>
-					<div class="description text-block">
-						Recording and transmission of vehicle data from the CAN-Bus to the cloud. Data is sent via a messaging server
-						to a Azure-Cloud-Service that records all data in a Big-Data-Storage system. This data can be evaluated and
-						visualized in graphs and as map overlays.
-					</div>
-					<div class="technologies text-block">
-						.NET, C#, Azure-SQL, ASP.MVC 5, RabbitMQ, Thrift, MS-AMQ, Blob-Storage, Microsoft Azure, three.js,
-						OpenLayers3, OpenStreetMap, PostgreSQL, CAN, GPS, PosgreSQL
-					</div>
-				</div>
-				<div class="project">
-					<div class="header">
-						<div class="logo">
-							<img src="Images/darkbird.png"/>
-						</div>
-						<div class="title">Azure Cloud-ERP-System</div>
-						<div class="period">CEO since 2014</div>
-					</div>
-					<div class="description text-block">
-						ERP-Cloud-System for operation controllers of security organisations. The software includes all functions
-						for manpower planning, payroll accounting and guard controlling via smartphone. All features were developed
-						by security personnel to meet the demands of their everyday work.
-					</div>
-					<div class="technologies text-block">
-						ASP.NET WebForms, jQuery, vue.js, Azure-SQL, Xamarin, Azure-AMQ, Azure Function Apps, Azure Logic Apps,
-						PowerBI, Hichart, Google Maps API, Plivo VoIP API, Google Analytics, Azure ML
-					</div>
-				</div>
-				<div id="many-more">
-					And many more....
-				</div>
-				<a class="contact_button">
-					<div class="button">
-						Contact me now!
-					</div>
-				</a>
-			</div>
-		</div>
-		<!-- OpenSource -->
-		<div id="opensource">
-			<div class="section_teaser parallax-window" data-parallax="scroll" data-image-src="images/parallax/softwaredevelopment.jpg"></div>
-			<div class="section_info">
-				<div>
-					<a href="https://github.com/everyday-solution" target="_blank">
-						<img src="Images/opensource.png" alt="my open source projects on github" title="my open source projects on github" class="section-logo" />
-					</a>
-				</div>
-				<h2>
-					Open source software I created and released through the years.
-				</h2>
-				<a href="https://github.com/everyday-solution" target="_blank">
-					<div class="button">
-						See samples of my work
-					</div>
-				</a>
-				<div>
-					Sharing with the world.
-				</div>
-			</div>
-		</div>
-		<!-- Darkbird -->
-		<div id="darkbird">
-			<div class="section_teaser parallax-window" data-parallax="scroll" data-image-src="images/parallax/sicherheitsdienst.jpg"></div>
-			<div class="section_info">
-				<div>
-					<a href="https://www.darkbird.de" target="_blank">
-						<img src="Images/darkbird.png" alt="dark.bird" title="dark.bird" class="section-logo" />
-					</a>
-				</div>
-				<h2>
-					ERP-System for guarding companies. Mission Planning & Guard Control System.
-				</h2>
-				<a href="https://www.darkbird.de/">
-					<div class="button">
-						Learn more!
 					</div>
 				</a>
 			</div>
