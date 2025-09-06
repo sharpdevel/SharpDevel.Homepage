@@ -4,7 +4,7 @@
 	--global-gray: gray;
 	--smaller-font-size: 0.8em;
 	--global-border-radius: 50px;
-	--global-block-width: 700px;
+	--global-block-width: 800px;
 }
 
 body {
@@ -65,22 +65,22 @@ video#backgroundvideo {
 }
 
 #first_impression {
-	padding-top: 5%;
+	padding-top: 3%;
 }
 
 #portrait {
-	height: 250px;
+	height: 150px;
 }
 
 #myname {
-	font-size: 40px;
+	font-size: 24px;
 	border-bottom: solid 1px black;
 	display: inline-block;
 	box-shadow: inset;
 }
 
 #profession {
-	font-size: 30px;
+	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
 }
@@ -92,7 +92,7 @@ video#backgroundvideo {
 	margin-left: auto;
 	margin-top: 20px;
 	background-color: rgba(255,255,255,0.7);
-	padding: 20px;
+	padding: 10px;
 	border-radius: var(--global-border-radius);
 	word-spacing: 0.3em;
 	line-height: 1.7em;
@@ -106,7 +106,7 @@ video#backgroundvideo {
 }
 
 	#brand img {
-		max-width: 300px;
+		height: 75px;
 	}
 
 #tellmemore_button {
@@ -446,10 +446,10 @@ header {
 	}
 
 	#myname {
-		font-size:30px;
+		font-size: 30px;
 	}
 
 	#profession {
-		font-size:22px;
+		font-size: 22px;
 	}
 }
