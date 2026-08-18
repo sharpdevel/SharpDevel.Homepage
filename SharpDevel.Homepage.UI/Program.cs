@@ -5,7 +5,8 @@ builder.Configuration.AddAzureKeyVault(Environment.GetEnvironmentVariable("Vault
 #endif
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddRazorPages().AddViewLocalization();
 builder.Services.AddControllers();
 
 var app = builder.Build();
@@ -20,6 +21,12 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+// Culture comes from the browser's Accept-Language header (query string ?culture=de wins for testing).
+app.UseRequestLocalization(options => options
+	.SetDefaultCulture("en")
+	.AddSupportedCultures("en", "de")
+	.AddSupportedUICultures("en", "de"));
 
 app.UseRouting();
 

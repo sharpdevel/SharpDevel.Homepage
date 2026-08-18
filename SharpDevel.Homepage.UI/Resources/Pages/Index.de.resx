@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Profession" xml:space="preserve">
+		<value>Problemlöser</value>
+	</data>
+	<data name="MissionP1" xml:space="preserve">
+		<value>Hi, ich bin Tobias Mundt – der Kopf hinter Darkbird.</value>
+	</data>
+	<data name="MissionP2" xml:space="preserve">
+		<value>Ein Sicherheitsunternehmen zu führen bringt Herausforderungen mit sich – das weiß ich aus erster Hand. Deshalb habe ich Darkbird entwickelt, DIE Planungssoftware, mit der Sicherheitsdienste ihre Teams digital verwalten – von überall. Ob Dienstplanung, Echtzeit-Überwachung oder die Optimierung von Abläufen: Darkbird gibt Ihnen die volle Kontrolle über Ihren Betrieb.</value>
+	</data>
+	<data name="MissionP3" xml:space="preserve">
+		<value>Bringen wir Ihr Sicherheitsunternehmen ins digitale Zeitalter – mit einer Lösung, die für Profis wie Sie gemacht ist.</value>
+	</data>
+	<data name="TellMeMore" xml:space="preserve">
+		<value>Erzähl mir mehr!</value>
+	</data>
+	<data name="TellMeMoreTooltip" xml:space="preserve">
+		<value>Erzähl mir mehr...</value>
+	</data>
+	<data name="FollowFacebook" xml:space="preserve">
+		<value>Folge mir auf Facebook....</value>
+	</data>
+	<data name="FollowTwitter" xml:space="preserve">
+		<value>Folge mir auf Twitter....</value>
+	</data>
+	<data name="FollowInstagram" xml:space="preserve">
+		<value>Folge mir auf Instagram....</value>
+	</data>
+	<data name="Copyright" xml:space="preserve">
+		<value>© 2021 Alle Rechte vorbehalten</value>
+	</data>
+	<data name="DarkbirdClaim" xml:space="preserve">
+		<value>ERP-System für Sicherheitsdienste. Dienstplanung &amp; Wächterkontrollsystem.</value>
+	</data>
+	<data name="LearnMore" xml:space="preserve">
+		<value>Mehr erfahren!</value>
+	</data>
+	<data name="DarkbirdTagline" xml:space="preserve">
+		<value>Ihr Unternehmen digital.</value>
+	</data>
+	<data name="OpenSourceClaim" xml:space="preserve">
+		<value>Open-Source-Software, die ich im Laufe der Jahre entwickelt und veröffentlicht habe.</value>
+	</data>
+	<data name="OpenSourceButton" xml:space="preserve">
+		<value>Beispiele meiner Arbeit ansehen</value>
+	</data>
+	<data name="OpenSourceTagline" xml:space="preserve">
+		<value>Teilen mit der Welt.</value>
+	</data>
+	<data name="ContactHeading" xml:space="preserve">
+		<value>Kontakt</value>
+	</data>
+	<data name="LabelName" xml:space="preserve">
+		<value>Name / Firma</value>
+	</data>
+	<data name="LabelEmail" xml:space="preserve">
+		<value>Ihre E-Mail-Adresse</value>
+	</data>
+	<data name="LabelMessage" xml:space="preserve">
+		<value>Ihre Nachricht</value>
+	</data>
+	<data name="GdprBeforeLink" xml:space="preserve">
+		<value>Mit Klick auf den Senden-Button akzeptieren Sie unsere</value>
+	</data>
+	<data name="GdprLinkText" xml:space="preserve">
+		<value>Datenschutzerklärung</value>
+	</data>
+	<data name="SendTitle" xml:space="preserve">
+		<value>Nachricht senden!</value>
+	</data>
+	<data name="Sending" xml:space="preserve">
+		<value>Nachricht wird gesendet...</value>
+	</data>
+	<data name="MailSuccess" xml:space="preserve">
+		<value>Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze bei Ihnen.</value>
+	</data>
+	<data name="MailError" xml:space="preserve">
+		<value>Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.</value>
+	</data>
+</root>
