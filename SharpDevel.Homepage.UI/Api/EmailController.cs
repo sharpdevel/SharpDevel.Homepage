@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
+using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Net.Mail;
 
@@ -8,14 +10,24 @@ namespace SharpDevel.Homepage.UI.Api
 	#region MessageViewModel
 	public class MessageViewModel
 	{
+		[Required]
+		[MaxLength(200)]
 		public String SenderName { get; set; } = String.Empty;
+
+		[Required]
+		[MaxLength(320)]
+		[EmailAddress]
 		public String SenderEmail { get; set; } = String.Empty;
+
+		[Required]
+		[MaxLength(5000)]
 		public String SenderMessage { get; set; } = String.Empty;
 	}
 	#endregion
 
 	[Route("api/[controller]")]
 	[ApiController]
+	[EnableRateLimiting("email")]
 	public class EmailController : ControllerBase
 	{
 		//Fields
@@ -41,17 +53,21 @@ namespace SharpDevel.Homepage.UI.Api
 		[HttpPost]
 		public void Post([FromBody] MessageViewModel viewModel)
 		{
+			// User input is HTML-encoded — it ends up in an HTML mail body.
 			var message = new MailMessage();
 			message.From = new MailAddress("ich@tobiasmundt.de");
 			message.To.Add(new MailAddress("ich@tobiasmundt.de"));
 			message.Subject = "Message from tobiasmundt.de";
-			message.Body = $"<p>Company: {viewModel.SenderName}</p><p>Email: {viewModel.SenderEmail}</p><p>Message: {viewModel.SenderMessage}</p>";
+			message.Body =
+				$"<p>Company: {WebUtility.HtmlEncode(viewModel.SenderName)}</p>" +
+				$"<p>Email: {WebUtility.HtmlEncode(viewModel.SenderEmail)}</p>" +
+				$"<p>Message: {WebUtility.HtmlEncode(viewModel.SenderMessage).ReplaceLineEndings("<br />")}</p>";
 			message.IsBodyHtml = true;
 
 			var smtpSettings = this.configuration
 				.GetSection("Smtp")
 				.Get<SmtpSettings>();
-			var client = new SmtpClient(smtpSettings.Url, smtpSettings.Port);
+			using var client = new SmtpClient(smtpSettings.Url, smtpSettings.Port);
 			client.Credentials = new NetworkCredential(smtpSettings.User, smtpSettings.Pass);
 			client.EnableSsl = true;
 			client.Send(message);
